@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Currency Converter</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="h1">Currency Converter</h1>
+
+        <div class="choice">
+            <label for="label">Choose a Currency:</label>
+
+            <select class="border" name="Currency" id="currency">
+            <option class="option" value="Euro">Euro</option>
+            <option class="option" value="Peso">Peso</option>
+            <option class="option" value="Pound">Pound</option>
+            <option class="option" value="Yuan">Yuan</option>
+            <option class="option" value="Yen">Yen</option>
+            </select>
+        </div>
+
+        <div class="btn">
+            <label for="number" class="border1"> Please enter your $USD:</label>
+                <input class="border2" type="text" id="usd" name="money" minlength="1" maxlength="20" required>
+            <button onclick="currency()" class="btn2" >Submit</button>  
+        </div>
+
+        <h2 class="h2">Your result:</h2>
+        <h2 id="result">0 dollars</h2>
+
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+<footer>
+
+</footer>
+</html>
